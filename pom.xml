@@ -32,7 +32,7 @@
         <log4j1.version>1.2.17</log4j1.version>
         <logback.version>1.2.3</logback.version>
         <easymock.version>3.5.1</easymock.version>
-        <avro.version>1.10.0</avro.version>
+        <avro.version>1.10.2</avro.version>
         <bcprov.version>1.68</bcprov.version>
         <commons-compress.version>1.20</commons-compress.version>
         <commons-io.version>2.8.0</commons-io.version>
@@ -107,6 +107,15 @@
   </scm>
     <repositories>
         <repository>
+          <id>apache.staging</id>
+          <name>Apache Development Staging Repository</name>
+          <url>https://repository.apache.org/content/repositories/staging/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+        </repository>
+
+        <repository>
             <id>talend_nexus</id>
             <name>talend-opensource-snapshot</name>
             <url>${talend_snapshots}</url>
@@ -130,6 +139,14 @@
         </repository>
     </repositories>
     <pluginRepositories>
+        <pluginRepository>
+          <id>apache.staging</id>
+          <name>Apache Development Staging Repository</name>
+          <url>https://repository.apache.org/content/repositories/staging/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+        </pluginRepository>
         <pluginRepository>
             <id>talend-opensource-snapshot</id>
             <name>talend-opensource-snapshot</name>
